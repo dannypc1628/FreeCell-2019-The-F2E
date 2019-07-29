@@ -1,4 +1,4 @@
-#game{
+#game-start{
     height:1000px;
     width: 1600px; 
 
@@ -33,6 +33,17 @@
 #how-to-play{
     color: #9E99FF;
     font-size: 2rem;
+}
+#game-play{
+    height:1000px;
+    width: 1600px; 
+    background-color: #2C2B50;
+}
+.freecell-top-bar{
+    background: -webkit-linear-gradient(left,#5D7FD9,#8957ED);
+    background: -o-linear-gradient(right,#5D7FD9,#8957ED);
+    background: -moz-linear-gradient(right,#5D7FD9,#8957ED);
+    background: linear-gradient(to right,#5D7FD9,#8957ED);
 }
 body{
     display:flex;
