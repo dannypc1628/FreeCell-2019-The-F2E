@@ -15,9 +15,9 @@
     <script src="js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
-    <div id="freecell" class="w-100 d-flex justify-content-center">
+    <div id="freecell" class="w-100 d-flex  flex-column justify-content-center">
            
-        <div id="game-start" class="d-flex justify-content-center" v-if="status==1">
+        <div id="game-start" class="d-flex justify-content-center align-self-center" v-if="status==1">
                 <div class="">
                         <div id="start-button" class="text-center " v-on:click="start">START</div>
                 </div>
@@ -29,6 +29,7 @@
                             <span class="text-center ">How to play?</span>
                         </div>
                 </div>
+                
         </div>
         
         <div id="game-play" class="d-flex flex-column  w-100 " v-if="status!=1">
@@ -36,10 +37,60 @@
                 <nav class=" d-flex navbar navbar-light freecell-top-bar w-100" v-if="status!=1">
                         <a class="navbar-brand text-light " href="#">FREECELL</a>
                 </nav>  
+                
+                        <div class="row mt-2 justify-content-center">
+                            
+                                <div class="col-sm-1">
+                                  <div class="card">
+                                        <img src="./img/card/club/club_1.png" class="card-img-top" alt="...">
+                                  </div>
+                                </div>
+                                <div class="col-sm-1">
+                                        <div class="card">
+                                              <img src="./img/card/club/club_1.png" class="card-img-top" alt="...">
+                                        </div>
+                                 </div>
+                                 <div class="col-sm-1">
+                                        <div class="card">
+                                              <img src="./img/card/club/club_1.png" class="card-img-top" alt="...">
+                                        </div>
+                                 </div>
+
+                                 <div class="col-sm-1">
+                                        <div class="card">
+                                              <img src="./img/card/club/club_1.png" class="card-img-top" alt="...">
+                                        </div>
+                                 </div>
+                                 <div class="col-sm-1"></div>
+                                 <div class="col-sm-1">
+                                        <div class="card">
+                                              <img src="./img/card/club/club_1.png" class="card-img-top" alt="...">
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-1">
+                                              <div class="card">
+                                                    <img src="./img/card/club/club_1.png" class="card-img-top" alt="...">
+                                              </div>
+                                       </div>
+                                       <div class="col-sm-1">
+                                              <div class="card">
+                                                    <img src="./img/card/club/club_1.png" class="card-img-top" alt="...">
+                                              </div>
+                                       </div>
+      
+                                       <div class="col-sm-1">
+                                              <div class="card">
+                                                    <img src="./img/card/club/club_1.png" class="card-img-top" alt="...">
+                                              </div>
+                                       </div>
+                                                  
+                        </div>
                    
-        <div>qwqwr</div>
+        
         </div>
+        
     </div>
+    <div class="fixed-bottom text-light text-center">你好，我是長庚，這是六角學院2019前端&UI修練精神時光屋活動，第二週前端投稿作品，採用的設計稿是<a href="https://challenge.thef2e.com/user/2232?schedule=3011#works-3011">UI設計師Penny的作品</a></div>
 </body>
 <script src="./js/week2.js"></script>
 </html>
